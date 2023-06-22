@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    
+    <link rel="shortcut icon" href="imagenes-encriptador/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+<body class="grid-container">
+   
+    <header class="contendor-logo"> 
+        <h1>
+            <img class="imagen-logo" src="imagenes-encriptador/logo.png" alt="logo" >
+        </h1>
+    </header>
+
+    <main>
+        <div class="grid-item contenedor-caja-de-texto">
+            
+                <textarea id="textArea" cols="30" rows="10" onclick="limpiarCampo()">Ingresa aquí tu texto</textarea>
+                <p>Solo letras mínusculas y sin acento</p>
+            
+        </div>
+        <div class="grid-item contenedor-mensaje">
+            <h1><img src="imagenes-encriptador/Muñeco.png" id="muñeco-con-lupa" alt="muñeco-con-lupa">
+            <h2 id="header-mensaje-falta-encriptar">Ningún mensaje fue encontrado</h2>
+            <p id="mensaje-final">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+
+
+        <div class="grid-item contenedor-botones">
+            <button id="boton-encriptar" onclick="encriptar()">Encriptar</button>
+            <button id="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
